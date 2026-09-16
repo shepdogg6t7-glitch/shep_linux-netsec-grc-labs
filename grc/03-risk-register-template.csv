@@ -1,0 +1,4 @@
+risk_id,finding,asset,likelihood,impact,risk_rating,framework_control,remediation,owner,status,due_date
+R-001,SSH root login permitted,web-server-01,Medium,High,High,"CIS 5.2.8 / NIST CSF PR.AC-1","Set PermitRootLogin no in sshd_config",you,Open,
+R-002,No host firewall active,web-server-01,High,Medium,High,"CIS 3.5.1 / NIST CSF PR.AC-5","Enable ufw with deny-by-default policy",you,Open,
+R-003,No automatic security updates,web-server-01,Medium,Medium,Medium,"CIS 1.9 / NIST CSF PR.IP-12","Install and configure unattended-upgrades",you,Open,
