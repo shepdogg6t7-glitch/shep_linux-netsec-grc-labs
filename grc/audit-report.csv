@@ -1,0 +1,8 @@
+control_id,description,status,detail
+"CIS-5.2.8","SSH root login disabled","PASS","root login not explicitly permitted"
+"CIS-5.2.10","SSH password authentication disabled","PASS","not set to yes"
+"CIS-3.5.1","Host firewall enabled","PASS","ufw active"
+"CIS-1.9","Automatic updates configured","PASS","unattended-upgrades installed"
+"CIS-6.1.10","No world-writable files in /etc","PASS","0 found"
+"CIS-5.4.1.1","Password max age <= 90 days","PASS","PASS_MAX_DAYS=90"
+"CIS-4.1.1.1","Audit daemon (auditd) running","FAIL","not running"
