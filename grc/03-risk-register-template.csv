@@ -1,4 +1,5 @@
 risk_id,finding,asset,likelihood,impact,risk_rating,framework_control,remediation,owner,status,due_date
-R-001,SSH root login permitted,web-server-01,Medium,High,High,"CIS 5.2.8 / NIST CSF PR.AC-1","Set PermitRootLogin no in sshd_config",you,Open,
-R-002,No host firewall active,web-server-01,High,Medium,High,"CIS 3.5.1 / NIST CSF PR.AC-5","Enable ufw with deny-by-default policy",you,Open,
-R-003,No automatic security updates,web-server-01,Medium,Medium,Medium,"CIS 1.9 / NIST CSF PR.IP-12","Install and configure unattended-upgrades",you,Open,
+R-001,"Vulnerable/outdated packages present (Lynis PKGS-7392)","LeShepVoPro9 (WSL2 dev/lab host)",Medium,High,High,"Lynis PKGS-7392 / NIST CSF ID.RA-1","Ran sudo apt update && sudo apt full-upgrade -y",you,Closed,2026-09-16
+R-002,"Password max age policy unset (PASS_MAX_DAYS=99999, effectively no expiration)","LeShepVoPro9 (WSL2 dev/lab host)",Medium,Medium,Medium,"CIS 5.4.1.1 / NIST CSF PR.AC-1","Set PASS_MAX_DAYS=90 in /etc/login.defs; applied retroactively to existing account via chage -M 90",you,Closed,2026-09-16
+R-003,"Audit daemon (auditd) cannot run - WSL2 kernel does not expose full audit-subsystem netlink control","LeShepVoPro9 (WSL2 dev/lab host)",Low,Medium,Low,"CIS 4.1.1.1 / NIST CSF DE.CM-7 (audit/log monitoring)","Accepted: platform limitation, not a config gap. Compensating control: this is a personal lab/dev host, not production. Would require a full VM or bare-metal Ubuntu install to remediate.",you,Accepted,
+R-004,"Only 1 responsive DNS nameserver configured (Lynis NETW-2705)","LeShepVoPro9 (WSL2 dev/lab host)",Low,Low,Low,"Lynis NETW-2705 / NIST CSF ID.BE-5 (resilience)","Add a secondary DNS resolver (e.g. 1.1.1.1) to resolv config",you,Open,
