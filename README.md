@@ -36,6 +36,20 @@ grc/            Audit, hardening, and risk-documentation labs
 docs/           Roadmap, objective-to-lab mapping, glossary
 ```
 
+
+
+## Security Documentation (GRC)
+
+Focused cybersecurity documentation for portfolio review — not all 800 NIST controls, only those relevant to this project:
+
+- [docs/security/security-posture.md](docs/security/security-posture.md) — implemented security controls
+- [docs/security/threat-model.md](docs/security/threat-model.md) — threats, assets, mitigations
+- [docs/security/nist-controls.md](docs/security/nist-controls.md) — focused NIST SP 800-53 Rev 5 control mapping (subset)
+- [docs/architecture/system-architecture.md](docs/architecture/system-architecture.md) — Mermaid system architecture diagram
+
+These docs load only when working in this project. AtlasOps remains clean with no security documentation.
+
+
 ## Setup (run once on YOUR machine)
 
 ```bash
