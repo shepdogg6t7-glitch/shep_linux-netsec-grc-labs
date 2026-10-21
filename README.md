@@ -67,3 +67,6 @@ sudo apt install -y net-tools iproute2 traceroute nmap tcpdump dnsutils \
 
 See `docs/roadmap.md` for the week-by-week plan and `docs/objective-map.md` for
 exact Network+ exam objective codes covered by each lab.
+
+## Agent skills
+Project-level skills in `.claude/skills` come from mukul975/Anthropic-Cybersecurity-Skills (Apache-2.0), commit 54a798831d2266a3ca61ce68a7acb80b81160d57. It is an independent community project, not affiliated with Anthropic. Only the `process.py` helpers for the risk-assessment and vendor-risk skills are included, after review; they use the Python standard library only.
